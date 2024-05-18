@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display">
+            <input type="text" id="result" disabled>
+        </div>
+
+        <div class="button">
+            <button class="clean" onclick="cleanResult()">AC</button>
+            <button class="del" onclick="deleteResult()">DEL</button>
+            
+            <button class="DtB" onclick="decimalToBinary()">D⇄B</button>
+            <button class="di" onclick="insertValue('/')">÷</button>
+            <button onclick="insertValue('7')">7</button>
+            <button onclick="insertValue('8')">8</button>
+            <button onclick="insertValue('9')">9</button>
+            <button class="mult" onclick="insertValue('*')">✕</button>
+            <button onclick="insertValue('4')">4</button>
+            <button onclick="insertValue('5')">5</button>
+            <button onclick="insertValue('6')">6</button>
+            <button class="sub" onclick="insertValue('-')">-</button>
+            <button onclick="insertValue('1')">1</button>
+            <button onclick="insertValue('2')">2</button>
+            <button onclick="insertValue('3')">3</button>
+            <button class="sum" onclick="insertValue('+')">+</button>
+            <button class="pre" onclick="insertValue('%')">%</button>
+            <button onclick="insertValue('0')">0</button>
+            <button class="dot" onclick="insertValue('.')">.</button>
+            <button class="equ" onclick="equalfun()">=</button>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
